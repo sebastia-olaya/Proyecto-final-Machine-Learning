@@ -13,17 +13,17 @@
   "semilla": 42,
   "pliegues": 3,
   "corte_temporal_prueba": "2026-04-09",
-  "modelo_elegido": "Random forest",
-  "umbral": 0.33305882112807855,
+  "modelo_elegido": "HistGradientBoosting",
+  "umbral": 0.3173032771830506,
   "regla_a_mano_hora": 12,
-  "AUC_cv_elegido": 0.7943439825537945,
-  "AUC_prueba_elegido": 0.806,
+  "AUC_cv_elegido": 0.7989000977817077,
+  "AUC_prueba_elegido": 0.8086,
   "AUC_prueba_regla": 0.5997,
-  "F1_prueba_elegido": 0.5862,
+  "F1_prueba_elegido": 0.5913,
   "F1_prueba_regla": 0.3861,
   "top3_columnas": {
-    "ret_prev_llegada": 0.1096712274678376,
-    "prev_disponible": 0.05202916321560388,
-    "holgura_prog": 0.03308694930163858
+    "ret_prev_llegada": 0.11337649668158134,
+    "prev_disponible": 0.11234530884248399,
+    "holgura_prog": 0.059339269932490245
   }
 }

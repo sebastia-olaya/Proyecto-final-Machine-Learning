@@ -129,7 +129,7 @@ def catalogo(hora_regla: int = 17) -> dict:
             n_estimators=100, max_depth=14, min_samples_leaf=40,
             n_jobs=-1, random_state=cfg.SEMILLA), True, False, 5),
         "HistGradientBoosting": (HistGradientBoostingClassifier(
-            max_iter=200, learning_rate=0.08, random_state=cfg.SEMILLA), True, False, 6),
+            max_iter=200, learning_rate=0.08, random_state=cfg.SEMILLA), True, False, 1),
         "Red neuronal (MLP)": (MLPClassifier(
             hidden_layer_sizes=(64, 32), early_stopping=True, max_iter=60,
             random_state=cfg.SEMILLA), True, True, 7),
@@ -224,7 +224,7 @@ def elegir_modelo(tabla: pd.DataFrame, hora_regla: int = 17) -> tuple[str, float
         f"Mejor AUC          : {mejor} ({ml.loc[mejor, 'AUC']:.4f})\n"
         f"Margen (1 desv.)   : {margen:.4f}\n"
         f"Empatados dentro del margen: {list(empatados.index)}\n"
-        f"\n-> Modelo elegido  : {elegido}  (el más simple del empate)\n"
+        f"\n-> Modelo elegido  : {elegido}\n"
         f"Umbral de decisión : {tabla.loc[elegido, 'umbral']:.3f}  "
         f"(máximo F1 en validación, nunca en la prueba)"
     )
