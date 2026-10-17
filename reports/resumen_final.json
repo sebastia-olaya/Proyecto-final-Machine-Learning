@@ -14,7 +14,7 @@
   "pliegues": 3,
   "corte_temporal_prueba": "2026-04-09",
   "modelo_elegido": "Random forest",
-  "umbral": 0.3330588211280785,
+  "umbral": 0.33305882112807855,
   "regla_a_mano_hora": 12,
   "AUC_cv_elegido": 0.7943439825537945,
   "AUC_prueba_elegido": 0.806,
